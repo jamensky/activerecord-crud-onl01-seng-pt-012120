@@ -73,6 +73,7 @@ def can_update_multiple_items_at_once
   end
 
     Movie.all.each{|m| m.title = "A Movie"}
+    binding.pry
 
 end
 
