@@ -74,7 +74,7 @@ def can_update_multiple_items_at_once
 
     Movie.all.each do |m|
 
-      m.title = "A Movie"
+      m.update(title: "A Movie")
       binding.pry
 
     end
