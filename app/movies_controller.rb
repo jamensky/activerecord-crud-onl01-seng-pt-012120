@@ -72,8 +72,7 @@ def can_update_multiple_items_at_once
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
   end
 
-    Movie.each{|m| m.title = "A Movie"}
-    binding.pry
+    Movie.all.each{|m| m.title = "A Movie"}
 
 end
 
